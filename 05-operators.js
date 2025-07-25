@@ -60,3 +60,6 @@
 
 // count2--; // 0
 // console.log("count2-- ->", count2);
+
+
+console.log(1 == true);
