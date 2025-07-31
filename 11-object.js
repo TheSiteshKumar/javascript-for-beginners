@@ -12,7 +12,7 @@ const user = {
     // console.log("Value:", user[key]);
     console.log("Value:", user.key);
   }
-  
+
   
   // Method 3: Just keys or values
   console.log("Keys:", Object.keys(user));

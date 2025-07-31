@@ -59,8 +59,9 @@ console.log(`city ${city} state ${state} pincode ${pincode}`);
 
 
 let fullName = "Mr. Rohit Kumar";
-let firstName = 
-let lastName = 
+let firstName = "Rohit"
+let lastName = "Kumar";
+console.log("Hello, " + firstName + " " + lastName + "!");
 
 console.log(`Hello, ${firstName} ${lastName}!`);
 console.log("Hello, " + firstName + " " + lastName + "!");
