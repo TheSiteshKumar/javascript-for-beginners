@@ -181,17 +181,30 @@ console.log("Highest grade:", highestGrade);
 // ============================================
 
 
-console.log("📝 Array Creation:");
-console.log("   let arr = [1, 2, 3];");
-console.log("   let arr = new Array(1, 2, 3);");
+// console.log("📝 Array Creation:");
+// console.log("   let arr = [1, 2, 3];");
+// console.log("   let arr = new Array(1, 2, 3);");
 
 
-console.log("📝 Common Methods:");
-console.log("   arr.push(item)     - add to end");
-console.log("   arr.pop()          - remove from end");
-console.log("   arr.unshift(item)  - add to beginning");
-console.log("   arr.shift()        - remove from beginning");
-console.log("   arr.length         - get array size");
-console.log("   arr.indexOf(item)  - find item index");
-console.log("   arr.includes(item) - check if item exists");
-console.log("   arr.join(separator)- convert to string");
+// console.log("📝 Common Methods:");
+// console.log("   arr.push(item)     - add to end");
+// console.log("   arr.pop()          - remove from end");
+// console.log("   arr.unshift(item)  - add to beginning");
+// console.log("   arr.shift()        - remove from beginning");
+// console.log("   arr.length         - get array size");
+// console.log("   arr.indexOf(item)  - find item index");
+// console.log("   arr.includes(item) - check if item exists");
+// console.log("   arr.join(separator)- convert to string");
+
+
+// ------------Array constructor-------------
+
+let arr = []
+arr.push(1)
+arr.push(2)
+console.log(arr)
+
+
+let arr2 = new Array(1,3,5)
+
+console.log(arr2)

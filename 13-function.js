@@ -32,3 +32,34 @@
 // console.log(sum); 
 
 
+// function declearation
+
+function sayHi(){
+    console.log('hello');
+}
+sayHi();
+
+
+// function expression
+let sayHello = function(){    // anonymous function
+    console.log('hello');
+}
+
+sayHello();
+
+
+
+let sayBye= function something(){    // named function
+    console.log('bye');
+}
+
+sayBye();
+
+
+
+// Arrow function
+let getInfo= ()=>{
+    console.log('this is an arrow function');
+}
+
+getInfo();
