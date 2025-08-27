@@ -5,18 +5,24 @@
 // }
 
 
-let age = 10;
+let age = 18;
 
-if (age > 18) {
-    console.log("You can play video games");
+if (age > 5 ){
+    console.log("You are a kid");
 }
-else {
-    console.log("You cannot play video games");
+else if (age >= 13 ) {
+    console.log("You you a child");
+}
+else if (age >= 18 ) {
+    console.log("You are an adult");
+}
+else{
+    console.log("You are a old person");
 }
 
 
 
-let dayOfWeek = "Monday";
+let dayOfWeek = "Tuesday";
 
 if (dayOfWeek === "Monday") {
   console.log("Day 1: Monday");
@@ -49,7 +55,14 @@ if (dayOfWeek === "Monday") {
 //     break;
 // }
 
-switch (dayOfWeek) {
+
+let day = "Friday";
+
+
+
+
+
+switch (day) {
   case "Monday":
     console.log("Day 1: Monday");
     break;
@@ -63,7 +76,7 @@ switch (dayOfWeek) {
     console.log("Day 4: Thursday");
     break;
   case "Friday":
-    console.log("Day 5: Friday");
+    console.log("Day 5: Friday (Fun day!)");
     break;
   case "Saturday":
     console.log("Day 6: Saturday");
