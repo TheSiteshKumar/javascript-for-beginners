@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Selection Return Types</title>
+</head>
+<body>
+  <h1 id="main-title">Hello DOM</h1>
+  <p class="intro">First paragraph</p>
+  <p class="intro">Second paragraph</p>
+  <div class="box">
+    <span>Inside box</span>
+  </div>
+
+  <script>
+    // 1. getElementById → Single element (null if not found)
+    const byId = document.getElementById("main-title");
+    console.log("getElementById:", byId); 
+
+    // 2. getElementsByClassName → HTMLCollection (array-like, live)
+    const byClass = document.getElementsByClassName("intro");
+    console.log("getElementsByClassName:", byClass); 
+
+    // 3. getElementsByTagName → HTMLCollection
+    const byTag = document.getElementsByTagName("p");
+    console.log("getElementsByTagName:", byTag); 
+
+    // 4. querySelector → Single element (first match or null)
+    const qs = document.querySelector(".box span");
+    console.log("querySelector:", qs); 
+
+    // 5. querySelectorAll → NodeList (array-like, static)
+    const qsa = document.querySelectorAll(".intro");
+    console.log("querySelectorAll:", qsa); 
+  </script>
+</body>
+</html>
