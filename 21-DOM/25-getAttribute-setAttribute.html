@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Get/Set Attributes Example</title>
+</head>
+<body>
+  <h1>DOM Attribute Example</h1>
+
+  <!-- Anchor tag -->
+  <p>
+    <a href="https://www.youtube.com/" >Click Me</a>
+  </p>
+
+  <!-- Simple form -->
+  <form class="form-todo">
+    <input type="text" placeholder="Enter task here">
+    <button type="submit">Add Task</button>
+  </form>
+
+  <script>
+    // get and set attributes
+    const link = document.querySelector("a");
+    console.log("Original href (without #):", link.getAttribute("href").slice(1));
+    
+    // change the href
+    link.setAttribute("href", "https://www.google.com");
+    console.log("Updated href:", link.getAttribute("href"));
+
+    // input element
+    const inputElement = document.querySelector(".form-todo input");
+    console.log("Input type:", inputElement.getAttribute("type"));
+  </script>
+</body>
+</html>

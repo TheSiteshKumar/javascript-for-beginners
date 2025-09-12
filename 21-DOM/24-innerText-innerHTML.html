@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./demo.js" defer></script>
+  </head>
+
+  <body>
+    <p>This is a paragraph2.</p>
+    <p id="one">This is a paragraph1.</p>
+    <h1>Hiii1</h1>
+
+    <h1 id="two">Hiii2</h1>
+
+    <script>
+      console.log("hello");
+
+      const pTag = document.querySelector("p");
+      console.log(pTag.innerText);
+
+      const heading = document.querySelector("h1");
+      let newContent = heading.innerText + " Agni";
+      heading.innerText = newContent;
+      console.log(newContent);
+
+      let unique = document.getElementById("two");
+      unique.innerText = "Welcome";
+      console.log(unique.innerText);
+    </script>
+  </body>
+</html>

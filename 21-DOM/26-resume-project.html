@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frontend Developer Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+      header p {
+        margin: 5px 0;
+        color: #555;
+      }
+      h2 {
+        font-size: 20px;
+        border-bottom: 2px solid #ddd;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        color: #444;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      ul li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Alam</h1>
+        <p>Frontend Developer</p>
+        <p>Email: you@example.com | Phone: +91 00000 00000</p>
+        <p>
+          GitHub: github.com/yourhandle | LinkedIn: linkedin.com/in/yourhandle
+        </p>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p>
+          Passionate frontend developer with 2+ years of experience building
+          responsive, user-friendly web applications using React, Next.js, and
+          modern JavaScript. Skilled at turning Figma designs into pixel-perfect
+          interfaces.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5, CSS3, JavaScript (ES6+)</li>
+          <li>React.js, Next.js</li>
+          <li>Tailwind CSS, Bootstrap</li>
+          <li>Responsive & Mobile-First Design</li>
+          <li>Git, GitHub</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <h3>Frontend Developer — Destiny IT Services Pvt Ltd</h3>
+        <p><em>Jan 2024 – Present</em></p>
+        <ul>
+          <li>
+            Developed responsive dashboards and portals with React + Tailwind
+            CSS.
+          </li>
+          <li>Worked closely with backend APIs to display real-time data.</li>
+          <li>Improved UI/UX consistency across e-office modules.</li>
+        </ul>
+
+        <h3>Freelance Web Developer</h3>
+        <p><em>2022 – 2023</em></p>
+        <ul>
+          <li>
+            Built portfolio websites and landing pages for clients using
+            Next.js.
+          </li>
+          <li>Optimized performance and SEO for faster page loads.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>College Directory</strong> — Dynamic Next.js site listing
+            500+ colleges with search and filters.
+          </li>
+          <li>
+            <strong>Salary Calculator UI</strong> — Interactive React app with
+            CTC vs In-hand toggle.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>
+          <strong>B.Sc. in Computer Science</strong> — Your University,
+          2021–2024
+        </p>
+      </section>
+    </div>
+
+    <script>
+      // 1. Change the background color of the page
+      document.body.style.backgroundColor = "#f0f9ff";
+
+      // 2. Update the resume name text
+      document.querySelector("header h1").textContent = "Alam Khan";
+
+      // 3. Change the job title under the name
+      document.querySelector("header p:first-of-type").textContent =
+        "Frontend Developer (React & Next.js)";
+
+      // 4. Modify the contact information
+      document.querySelector("header p:nth-of-type(2)").textContent =
+        "Email: alam@example.com | Phone: +91 98765 43210";
+
+      // 5. Replace the summary paragraph content
+      document.querySelector("section p").textContent =
+        "Creative frontend developer skilled in React, Next.js, and UI/UX design.";
+
+      // 6. Change all section heading colors
+      document.querySelectorAll("h2").forEach((h2) => {
+        h2.style.color = "#0ea5e9";
+      });
+
+      // 7. Add a border around the main container
+      document.querySelector(".container").style.border = "2px solid #0ea5e9";
+
+      // 8. Prefix all list items with an emoji
+      document.querySelectorAll("ul li").forEach((li) => {
+        li.textContent = "👉 " + li.textContent;
+      });
+
+      // 9. Add a new skill to the skills list
+      const newSkill = document.createElement("li");
+      newSkill.textContent = "TypeScript";
+      document.querySelector("section ul").appendChild(newSkill);
+
+      // 10. Highlight all project titles
+      document.querySelectorAll("section ul li strong").forEach((strong) => {
+        strong.style.color = "darkblue";
+        strong.style.background = "#e0f7fa";
+        strong.style.padding = "2px 4px";
+        strong.style.borderRadius = "4px";
+      });
+
+      // 11. Increase the font size of the main name
+      document.querySelector("header h1").style.fontSize = "32px";
+
+      // 12. Change the text color of the summary paragraph
+      document.querySelector("section p").style.color = "#444";
+
+      // 13. Add a background color to the skills section
+      document.querySelectorAll("section")[2].style.backgroundColor = "#f9f9f9";
+
+      // 14. Replace one project description with new text
+      const firstProject = document.querySelector("section ul li");
+      if (firstProject) {
+        firstProject.textContent =
+          "👉 Portfolio Website — Built with Next.js and Tailwind CSS.";
+      }
+
+      // 15. Bold the education degree text
+      const edu = document.querySelector("section p strong");
+      if (edu) {
+        edu.style.fontWeight = "bold";
+        edu.style.color = "#222";
+      }
+    </script>
+  </body>
+</html>
