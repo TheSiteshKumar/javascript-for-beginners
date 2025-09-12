@@ -3,31 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="./demo.js" defer></script>
+    <title>innerText vs innerHTML Demo</title>
   </head>
 
   <body>
     <p>This is a paragraph2.</p>
     <p id="one">This is a paragraph1.</p>
     <h1>Hiii1</h1>
-
     <h1 id="two">Hiii2</h1>
+
+    <div id="demo">
+      <strong>Hello</strong> World
+    </div>
 
     <script>
       console.log("hello");
 
+      // 1. innerText
       const pTag = document.querySelector("p");
-      console.log(pTag.innerText);
+      console.log("pTag.innerText:", pTag.innerText);
 
       const heading = document.querySelector("h1");
       let newContent = heading.innerText + " Agni";
       heading.innerText = newContent;
-      console.log(newContent);
+      console.log("Updated heading with innerText:", newContent);
 
       let unique = document.getElementById("two");
       unique.innerText = "Welcome";
-      console.log(unique.innerText);
+      console.log("Unique heading (innerText):", unique.innerText);
+
+      // 2. innerHTML
+      const demoDiv = document.getElementById("demo");
+      console.log("demoDiv.innerText:", demoDiv.innerText);   // Shows only text
+      console.log("demoDiv.innerHTML:", demoDiv.innerHTML);   // Shows with <strong> tag
+
+      // Update innerHTML with tags
+      demoDiv.innerHTML = "<em>Changed</em> content with <u>HTML</u>";
+      console.log("New demoDiv.innerHTML:", demoDiv.innerHTML);
+
+      // Update innerText with same string (tags are shown as plain text)
+      demoDiv.innerText = "<em>Plain Text</em>";
+      console.log("New demoDiv.innerText:", demoDiv.innerText);
     </script>
   </body>
 </html>
