@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Element</title>
+</head>
+<body>
+
+  <h1>Agni</h1>
+  <h2>Shadan</h2>
+
+  <script>
+    const newHeading = document.createElement('h1');
+    newHeading.textContent = 'I\'m Sitesh';
+
+    const OldHeader = document.querySelector('h1');
+    document.body.insertBefore(newHeading, OldHeader); 
+  </script>
+</body>
+</html>

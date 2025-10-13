@@ -1,9 +1,10 @@
 // Define an object
-// const user = {
-//   name: "John",
-//   age: 30,
-//   city: "Delhi",
-// };
+const user = {
+  name: "John",
+  age: 30,
+  
+  city: "Delhi",
+};
 
 // Method 1: Using for...in loop
 // console.log("Using for...in:");
